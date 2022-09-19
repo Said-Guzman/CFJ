@@ -23,6 +23,8 @@ ul{
     padding: 0;
     overflow: hidden;
     background-color: plum;
+    display: flex;
+    justify-content: space-around;
 
   }
 
@@ -72,11 +74,19 @@ ul{
 
 h1{
 color: orangered;
+text-align: center;
+font-size: 30px;
 }
 p{
     color: teal;
 }
 
+#top{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: teal;
+    border-width: 5px; 
+}
 
 
 

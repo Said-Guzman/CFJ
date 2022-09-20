@@ -184,15 +184,11 @@ footer{
 }
 
 
+@media (max-width:850px){  
+nav{
+float: none;
+width: 100%;
 
+}
 
-
-
-
-
-
-
-
-
-
-
+}

@@ -1,0 +1,203 @@
+html, body{
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    text-align: center;
+    background-color: #34b7e7;
+    }
+
+    #F4A{
+    text-align: center;
+    color: plum;
+    width: 200px;
+    }
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34b7e7;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  li {
+    float: left;
+    color: rgb(0, 0, 0);
+    font-family: "SF Fedora";
+    font-size: 300%;
+    text-align: center;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: plum;
+    color: #34b7e7;
+  }
+
+
+.event-banner {
+    position: relative;
+    height: 30vw;
+    min-height: 375px;
+    max-height: 650px;
+    overflow: hidden;
+    background-image: url(/Images/volunteers-in-warehouse.webp);
+    background-repeat: repeat-x;
+    background-size: cover;
+  }
+  
+  .event-banner .text-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(248, 150, 30);
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    left: -6.5%;
+  }
+  .text-content {
+    position: absolute;
+    width: 30%;
+    left: 20%;
+    top: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .text-content h1 {
+    text-align: center;
+  }
+  .text-content p {
+    font-style: italic;
+    font-size: large;
+  }
+  .text-overlay:not(.content-area) * {
+    color: white;
+    text-shadow: 0 2px 4px rgb(0 0 0 / 60%);
+  }
+  .event-container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .event-container h3 {
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .event-container .event {
+    box-shadow: 0 4px 16px -8px black;
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+  }
+  
+  .event .event-block {
+    background-color: teal;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .event .event-block .date {
+    font-size: 34px;
+  }
+  
+  .event .event-block .month {
+    font-size: 24px;
+    font-weight: normal;
+  }
+  
+  .event .event-block-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+    background-image: url(/Images/can-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .event .event-block-2 h3 {
+    font-size: 24px;
+    /*margin: 24px 0 10px; */
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+  }
+  
+  .event .event-block-2 .event-time {
+    background-color: rgb(248, 150, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 14px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  .event .event-block-2 .event-location {
+    background-color: #34b7e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    border-radius: 16px;
+    margin: 14px 0;
+    font-size: 14px;
+  }
+  img {
+    width: 30px;
+    height: auto;
+  }
+  
+  footer{
+    text-align: center;
+    background-color: plum;
+    width: 100%;
+
+}
+
+
+  /* Media Querie*/
+  @media (max-width: 550px) {
+    .event {
+      flex-direction: column;
+    }
+    .event .event-block {
+      padding: 0;
+      border-radius: 8px 8px 0 0;
+    }
+    .event .event-block .event-date .date {
+      padding: 10px 0;
+    }
+    .event .event-block .event-date .date,
+    .event .event-block .event-date .month {
+      display: inline-block;
+      font-size: 10px 0;
+    }
+  }

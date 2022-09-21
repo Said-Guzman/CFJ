@@ -183,12 +183,3 @@ footer{
  height: 30px;
 }
 
-
-@media (max-width:850px){  
-nav{
-float: none;
-width: 100%;
-
-}
-
-}

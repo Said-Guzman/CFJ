@@ -44,7 +44,8 @@ ul{
   
   li a:hover {
     background-color: plum;
-    color: #34b7e7;
+    color: #319ec5;
+    padding: 14px 100px;
   }
 
 

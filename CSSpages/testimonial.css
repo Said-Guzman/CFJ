@@ -3,6 +3,52 @@
     padding: 0px;
 }
 
+header{
+    text-align: center;
+    background-color: #34b7e7;
+    
+    }
+
+#F4A{
+    text-align: center;
+    color: #34b7e7;
+    width: 200px;
+    }
+
+#ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34b7e7;
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  #li {
+    float: left;
+    color: rgb(0, 0, 0);
+    font-family: "SF Fedora";
+    font-size: 300%;
+    text-align: center;
+  }
+  
+  #li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  #li a:hover {
+    background-color: plum;
+    color: #319ec5;
+    padding: 14px 100px;
+  }
+
+
 h1 {
     text-align: center;
 }

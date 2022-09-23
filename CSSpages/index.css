@@ -86,3 +86,18 @@
 #dot-line{
 	word-spacing:1px;
 }
+
+footer{
+    text-align: center;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://wallpaperforu.com/wp-content/uploads/2020/10/food-wallpaper-20100313242535-scaled.jpg');
+    width: 100%;
+}
+
+#social{
+ width: 30px;
+ height: 30px;
+}
+
+
+
+

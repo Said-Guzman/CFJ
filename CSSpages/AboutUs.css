@@ -59,36 +59,7 @@ nav ul .active {
 #check {
   display: none;
 }
-@media screen and (max-width: 990px) {
-  nav {
-    padding: 0px 50px;
-  }
-  .checkbtn {
-    display: block;
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
-  nav ul {
-    width: 100%;
-    height: 100vh;
-    background-color: #1c80a4;
-    position: fixed;
-    top: 75px;
-    left: 0%;
-    text-align: center;
-    transition: all 0.5s ease;
-  }
-  nav ul li {
-    display: block;
-    margin: 60px 0px;
-    line-height: 20px;
-  }
-  nav ul li a {
-    font-size: 20px;
-    font-weight: bolder;
-  }
-}
+
 /** main content style**/
 #ceo {
   background-color: rgb(229, 236, 240);
@@ -215,4 +186,36 @@ footer img {
   height: 30px;
   width: 30px;
   object-fit: cover;
+}
+
+/**media queries style **/
+@media screen and (max-width: 990px) {
+  nav {
+    padding: 0px 50px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  nav ul {
+    width: 100%;
+    height: fit-content;
+    background-color: #1c80a4;
+    position: absolute;
+    top: 75px;
+    left: 0%;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  nav ul li {
+    display: block;
+    margin: 60px 0px;
+    line-height: 20px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    font-weight: bolder;
+  }
 }

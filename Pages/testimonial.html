@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSSpages/testimonial.css" />
+    <link rel="stylesheet" href="/CSSpages/testimonial.css"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+ />
     <title>Testimonial Page</title>
     <style>
       a:link {
@@ -14,19 +15,27 @@
     </style>
   </head>
   <body>
-    
-    <nav id="nav">
-      <header ><img src="/Images/F4A.png"  id="F4A"></header>
-      <ul id="ul">
-        <li id="li"><a href="/Pages/index.html">Home</a></li>
-        <li id="li"><a href="/Pages/events.html">Events</a></li>
-        <li id="li"><a href="/Pages/contact.html">Contact</a></li>
-        <li id="li"><a href="/Pages/AboutUs.html">About Us</a></li>
-        <li id="li"><a href="/Pages/testimonial.html">Testimonials</a></li>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <div class="logo">
+          <img src="/Images/F4A-BW.png"  id="F4A"></li>
+      </div>
+      <ul>
+        <li><a href="/Pages/index.html"> Home </a></li>
+        <li><a href="/Pages/events.html"> Events </a></li>
+        <li><a href="/Pages/contact.html"> Contact </a></li>
+        <li><a href="/Pages/AboutUs.html"> About Us </a></li>
+        <li><a href="/Pages/testimonial.html"> Testimonials </a></li>
       </ul>
-    </nav>
+    </nav> 
+    <br>
+    <header>
       <h1>Testimonials</h1>
-    <article class="testimonies">
+    </header>
+    <main>
       <ul>
         <li class="card">
           <img src="/Images/Oprah.jpeg" alt="Oprah" />
@@ -57,7 +66,7 @@
 
         <li><button id="testify">Testify</button></li>
       </ul>
-    </article>
+    </main>
     <br />
     <footer>
       <a

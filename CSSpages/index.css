@@ -1,103 +1,153 @@
-*{
-	margin:0px; 
-	padding:0px;
-	font-family: 'Noto Sans', sans-serif;
-	color:rgb(248, 150, 30);
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Noto Sans", sans-serif;
+  color: rgb(248, 150, 30);
 }
 /**background-image styling**/
-.home-page{
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://wallpaperforu.com/wp-content/uploads/2020/10/food-wallpaper-20100313242535-scaled.jpg');
-	background-repeat:no-repeat;
-	background-size:cover;
-	width:100%;
-	height:100vh;
+.home-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://wallpaperforu.com/wp-content/uploads/2020/10/food-wallpaper-20100313242535-scaled.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
-.nav{
-	background-color:rgba(0,0,0,0.2);
-	height:15vh;
-	width:100%;
+
+/**navigation bar **/
+nav {
+  height: 75px;
+  background-color: teal;
+  line-height: 75px;
+  padding: 0px 80px;
 }
-.nav-logo{
-	width:35%;
-	float:left;
-	color:rgb(248, 150, 30);
-	font-size:22px;
-	line-height:15vh;
-	text-transform:uppercase;
-	text-align:center;
-	letter-spacing:3px;
+
+nav .logo {
+  float: left;
 }
-.nav-links{
-	width:50%;
-	line-height:15vh;
-	float:right;
-	margin-left:5px;
+
+nav .logo p {
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: rgb(248, 150, 30);
+  text-transform: uppercase;
 }
-.nav-links ul{
-	display:flex;
-	justify-content:space-around;
+
+nav ul {
+  float: right;
 }
-.nav-links ul li{
-	display:inline;
-	list-style:none;
+nav ul li {
+  list-style: none;
+  display: inline-block;
 }
-.nav-links ul li a{
-	text-decoration:none;
-	text-transform:uppercase;
-	font-weight:600;
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(248, 150, 30);
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0px 20px;
 }
-.nav-links ul li a:hover{
-	color:white;
+
+nav ul li a:hover {
+  color: #000000;
 }
-#first-link{
-	color:white;
+nav ul .active {
+  color: #000000;
+}
+.checkbtn {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  float: right;
+  display: none;
+  line-height: 80px;
+  margin-right: 40px;
+}
+#check {
+  display: none;
+}
+@media screen and (max-width: 990px) {
+  nav {
+    padding: 0px 50px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  nav .logo p {
+    font-size: 30px;
+  }
+  nav ul {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(4, 91, 91);
+    position: fixed;
+    top: 75px;
+    left: 0%;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  nav ul li {
+    display: block;
+    margin: 60px 0px;
+    line-height: 20px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    font-weight: bold;
+  }
 }
 
 /**main styling**/
-.main{
-	margin-top:30vh;
-	text-align:center;
-	text-transform:uppercase;
+.main {
+  margin-top: 30vh;
+  text-align: center;
+  text-transform: uppercase;
 }
-.main big{
-	font-size:50px;
-	font-weight:bold;
+.main big {
+  font-size: 50px;
+  font-weight: bold;
 }
-.main p{
-	margin-bottom:15px;
+.main p {
+  margin-bottom: 15px;
 }
-.main button{
-	background-color:none;
-	text-transform:capitalize;
-	padding:7px;
-	margin:10px;
-	font-weight:600;
-	font-size:12px;
-	border:2px solid rgb(248, 150, 30);
+.main button {
+  background-color: none;
+  text-transform: capitalize;
+  padding: 7px;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  border: 2px solid rgb(248, 150, 30);
 }
-#learn-more{
-	background-color:rgb(248, 150, 30);
-	color:black;
+#learn-more {
+  background-color: rgb(248, 150, 30);
+  color: black;
 }
-#read-me{
-	background-color:rgb(248, 150, 30);
-	color: black;
+#read-me {
+  background-color: rgb(248, 150, 30);
+  color: black;
 }
-#dot-line{
-	word-spacing:1px;
-}
-
-footer{
-    text-align: center;
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://wallpaperforu.com/wp-content/uploads/2020/10/food-wallpaper-20100313242535-scaled.jpg');
-    width: 100%;
+#dot-line {
+  word-spacing: 1px;
 }
 
-#social{
- width: 30px;
- height: 30px;
+/** footer style **/
+footer {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration: none;
+  width: 20%;
 }
 
-
-
-
+footer img {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}

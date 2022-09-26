@@ -252,3 +252,9 @@ footer img {
     font-size: 10px 0;
   }
 }
+
+@media (max-width: 990px) {
+  #banner-text {
+    font-size: 15px;
+  }
+}
